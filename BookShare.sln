@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookShare.Api", "BookShare.Api\BookShare.Api.csproj", "{B299EF18-793E-45F1-B4FF-766DAA4A9430}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B299EF18-793E-45F1-B4FF-766DAA4A9430}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B299EF18-793E-45F1-B4FF-766DAA4A9430}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B299EF18-793E-45F1-B4FF-766DAA4A9430}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B299EF18-793E-45F1-B4FF-766DAA4A9430}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {59BF9BDD-4EB7-4990-BE08-A01E3A29DEC9}
+	EndGlobalSection
+EndGlobal
