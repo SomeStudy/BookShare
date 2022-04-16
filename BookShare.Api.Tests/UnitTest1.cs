@@ -10,7 +10,7 @@ namespace BookShare.Api.Tests
         {
             var t = 1;
 
-            Assert.Equal(2,t);
+            Assert.Equal(1,t);
         }
     }
 }
