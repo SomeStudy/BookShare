@@ -1,11 +1,6 @@
 name: build and test
 
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-    
+on:    
   workflow_dispatch:
 
 jobs:
@@ -39,7 +34,7 @@ jobs:
   
     name: deploy
     needs: build
-    uses: SomeStudy/BookShare/.github/workflows/CI.yml@main
+    uses: ./.github/workflows/CI.yml
     secrets:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         token: ${{ secrets.DOCKERHUB_TOKEN }}
