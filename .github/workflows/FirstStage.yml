@@ -39,7 +39,6 @@ jobs:
   
     name: deploy
     if: github.event.pull_request.merged == true
-    needs: build
     uses: ./.github/workflows/CI.yml
     secrets:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
