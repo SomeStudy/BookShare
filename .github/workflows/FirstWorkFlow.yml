@@ -39,7 +39,7 @@ jobs:
   
     name: deploy
     needs: build
-    uses: SomeStudy/BookShare/.github/workflows/FirstWorkFlow.yml@main
+    uses: SomeStudy/BookShare/.github/workflows/CI.yml@main
  
       
       
