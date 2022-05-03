@@ -10,7 +10,6 @@ on:
 jobs:
  build:
     name: Input check
-    if: github.event.action == 'closed'
     runs-on: ubuntu-latest
     steps:
       - name: Checking your input
@@ -19,6 +18,7 @@ jobs:
           echo "github.event.pull_request.canceled == 'true' : $MERGED_TRUE_STR"
           echo "github.event.pull_request.canceled  == true  : $MERGED_TRUE_BOOL"
           echo "${{ github.event.action }}"
+          echo "${{ github.event.pull_request.merged == true }}"
         env:
           MERGED_RAW: ${{ github.event.pull_request.canceled }}
           MERGED_TRUE_STR: ${{ github.event.pull_request.canceled == 'true' }}
