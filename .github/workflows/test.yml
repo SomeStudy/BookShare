@@ -1,4 +1,4 @@
-name: build and test
+name: test
 
 on:    
   workflow_dispatch:
@@ -17,7 +17,7 @@ jobs:
           echo "github.event.pull_request.canceled           : $MERGED_RAW"
           echo "github.event.pull_request.canceled == 'true' : $MERGED_TRUE_STR"
           echo "github.event.pull_request.canceled  == true  : $MERGED_TRUE_BOOL"
-          echo "github.event.pull_request"
+          echo "${{ github.event.action }}"
         env:
           MERGED_RAW: ${{ github.event.pull_request.canceled }}
           MERGED_TRUE_STR: ${{ github.event.pull_request.canceled == 'true' }}
