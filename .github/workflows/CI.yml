@@ -2,14 +2,12 @@ name: ci
 
 on:
   workflow_call:
-  workflow_dispatch:
   
-    inputs:
-     secrets:
-     username:
-       required: true
-     token:
-       required: true
+    secrets:
+      username:
+        required: true
+      token:
+        required: true
      
 jobs:
   docker:
