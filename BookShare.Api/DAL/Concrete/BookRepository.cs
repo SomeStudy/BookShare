@@ -15,7 +15,7 @@ namespace BookShare.Api.DAL.Concrete
         private static List<Book> Books { get; set; } = new List<Book> {
 
             new Book { Id = Guid.Parse("27B5A833-12C3-4CD5-93FE-EEDC76F403C8"),Name = "Book1"  },
-            new Book { Id = Guid.Parse("02593F89-E28E-4D7C-AF23-8F6C9D5FCF8B"),Name = "Book257648748764"  }};
+            new Book { Id = Guid.Parse("02593F89-E28E-4D7C-AF23-8F6C9D5FCF8B"),Name = "Book2"  }};
 
 
         public async Task<Book> GetBookById(Guid Id)
