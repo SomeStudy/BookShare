@@ -2,8 +2,11 @@ name: build and test
 
 on:
   push:
+    branches: [ main ]
   pull_request:
     branches: [ main ]
+    
+  workflow_dispatch:
 
 jobs:
   build-and-test:
@@ -17,9 +20,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-      with:
-          fetch-depth: 0
-          ref: main
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v2
       with:
@@ -32,6 +32,6 @@ jobs:
       run: dotnet build --configuration Release --no-restore
     
     - name: Test
-      run: dotnet test --verbosity normal
+      run: dotnet test --no-restore --verbosity normal
       
      
