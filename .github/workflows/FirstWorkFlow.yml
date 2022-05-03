@@ -1,17 +1,12 @@
 name: build and test
 
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-    
+on:    
   workflow_dispatch:
 
 jobs:
-  build-and-test:
+  build:
 
-    name: build-and-test-${{matrix.os}}
+    name: build ${ {matrix.os }}
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -20,6 +15,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v2
       with:
@@ -33,5 +29,16 @@ jobs:
     
     - name: Test
       run: dotnet test --no-restore --verbosity normal
+ 
+  deploy:
+  
+    name: deploy
+    needs: build
+    uses: ./.github/workflows/CI.yml
+    secrets:
+        username: ${{ secrets.DOCKERHUB_USERNAME }}
+        token: ${{ secrets.DOCKERHUB_TOKEN }}
+      
+      
       
      
