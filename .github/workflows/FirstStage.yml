@@ -11,8 +11,8 @@ jobs:
   build:
 
     name: build ${ {matrix.os }}
-    if: github.event.pull_request.closed != true
     runs-on: ${{ matrix.os }}
+    if: ${{ github.event.pull_request.closed != true }}
     strategy:
       matrix:
         os: [ubuntu-latest] # can be added "windows-latest and macOS-latest" also 
