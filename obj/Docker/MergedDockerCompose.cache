@@ -1,0 +1,18 @@
+name: dockercompose521999190485955404
+services:
+  bookshare.api:
+    build:
+      context: C:\Users\ferid\source\repos\BookShare
+      dockerfile: BookShare.Api/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: bookshareapi
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      protocol: tcp
+networks:
+  default:
+    name: dockercompose521999190485955404_default

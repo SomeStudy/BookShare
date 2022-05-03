@@ -1,0 +1,64 @@
+name: dockercompose521999190485955404
+services:
+  bookshare.api:
+    build:
+      context: C:\Users\ferid\source\repos\BookShare
+      dockerfile: BookShare.Api/Dockerfile
+    depends_on:
+      mongodb.500.2:
+        condition: service_started
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORT: https://+:5001
+      ASPNETCORE_URLS: http://+:5000
+    image: bookshareapi
+    mem_limit: "314572800"
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      protocol: tcp
+    - mode: ingress
+      target: 5000
+      published: "5000"
+      protocol: tcp
+    - mode: ingress
+      target: 5000
+      published: "5001"
+      protocol: tcp
+  mongo-express.500.2:
+    depends_on:
+      mongodb.500.2:
+        condition: service_started
+    environment:
+      ME_CONFIG_MONGODB_ADMINPASSWORD: password
+      ME_CONFIG_MONGODB_ADMINUSERNAME: admin
+      ME_CONFIG_MONGODB_SERVER: mongodb.500.2
+    image: mongo-express
+    mem_limit: "157286400"
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 8081
+      published: "8080"
+      protocol: tcp
+    restart: always
+  mongodb.500.2:
+    environment:
+      MONGO_INITDB_ROOT_PASSWORD: password
+      MONGO_INITDB_ROOT_USERNAME: admin
+    image: mongo
+    mem_limit: "314572800"
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 27017
+      published: "27017"
+      protocol: tcp
+    restart: always
+networks:
+  default:
+    name: dockercompose521999190485955404_default
