@@ -40,6 +40,9 @@ jobs:
     name: deploy
     needs: build
     uses: SomeStudy/BookShare/.github/workflows/CI.yml@main
+    with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          token: ${{ secrets.DOCKERHUB_TOKEN }} 
  
       
       
