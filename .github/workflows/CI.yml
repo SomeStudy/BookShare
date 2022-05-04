@@ -12,14 +12,10 @@ env:
      
 jobs:
 
-  test:
-    name: calling build and test
-    uses: ./.github/workflows/FirstStage.yml
     
 
   docker:
-    if: ${{github.event.workflow_dispatch == true}}
-    needs: test
+    if: github.event.workflow_dispatch == true
     runs-on: ubuntu-latest
     steps:
       -
