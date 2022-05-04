@@ -36,14 +36,6 @@ jobs:
     - name: Test
       run: dotnet test --no-restore --verbosity normal
  
-  deploy:
-  
-    name: deploy
-    if: github.event.pull_request.merged == true
-    uses: ./.github/workflows/CI.yml
-    secrets:
-        username: ${{ secrets.DOCKERHUB_USERNAME }}
-        token: ${{ secrets.DOCKERHUB_TOKEN }}
       
       
       
