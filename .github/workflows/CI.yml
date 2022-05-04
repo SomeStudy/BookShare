@@ -40,4 +40,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: feridmzd/private_repos
+          tags: feridmzd/private_repos:latest
