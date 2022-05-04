@@ -13,9 +13,13 @@ env:
 jobs:
 
     
+  test:
+    name: calling build and test
+    uses: ./.github/workflows/FirstStage.yml
 
   docker:
-    if: github.event_name == 'workflow_dispatch'
+    if: github.event_name == 'workflow_dispatch' || github.event.pull_request.merged == true
+    needs: test
     runs-on: ubuntu-latest
     steps:
       -
