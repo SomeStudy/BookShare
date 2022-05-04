@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
    
 env:
-  TEST_TAG: feridmzd/private-repos:test
+  TEST_TAG: feridmzd/private_repos:test
      
 jobs:
 
