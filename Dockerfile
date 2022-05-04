@@ -10,5 +10,5 @@ RUN dotnet publish "BookShare.Api/BookShare.Api.csproj" -c Release -o /app/publi
 FROM mcr.microsoft.com/dotnet/aspnet:6.0-focal AS base
 WORKDIR /app
 COPY --from=build /app/publish .
-EXPOSE 7000
+EXPOSE 5000
 ENTRYPOINT ["dotnet", "BookShare.Api.dll"]
