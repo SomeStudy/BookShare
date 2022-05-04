@@ -8,6 +8,9 @@ on:
         required: true
       token:
         required: true
+        
+env:
+  TEST_TAG: feridmzd/private-repos:test
      
 jobs:
   docker:
