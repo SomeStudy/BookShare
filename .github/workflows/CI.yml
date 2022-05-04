@@ -1,19 +1,26 @@
 name: ci
 
 on:
-  workflow_call:
+  pull_request_target:
+    types: [closed]
+    branches: [ main ]
+    
+  workflow_dispatch:
   
-    secrets:
+  workflow_call:
+   secrets:
       username:
         required: true
       token:
         required: true
-        
+          
+   
 env:
   TEST_TAG: feridmzd/private-repos:test
      
 jobs:
   docker:
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
       -
@@ -26,8 +33,8 @@ jobs:
         name: Login to DockerHub
         uses: docker/login-action@v1 
         with:
-          username: ${{ secrets.username }}
-          password: ${{ secrets.token }}
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
       -
         name: Build and export to Docker
         uses: docker/build-push-action@v2
