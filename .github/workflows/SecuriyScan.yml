@@ -11,7 +11,11 @@ jobs:
   analyze:
 
     name: analyze
-    permissions: read-all|write-all
+    permissions:
+      security-events: write
+      actions: read
+      contents: read
+
     runs-on: ubuntu-latest
 
     strategy:
