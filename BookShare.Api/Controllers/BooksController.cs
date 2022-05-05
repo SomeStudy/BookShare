@@ -8,7 +8,9 @@ using System.Threading.Tasks;
 
 namespace BookShare.Api.Controllers
 {
+    [Route("api/v{version:apiVersion}/[controller]")]
     [Route("api/[controller]")]
+    [ApiVersion("1.0")]
     [ApiController]
     public class BooksController : ControllerBase
     {
@@ -20,6 +22,10 @@ namespace BookShare.Api.Controllers
         }
 
         // GET: api/books
+        // GET: api/v1.0/books
+        // GET: api/v2.0/books
+        //[MapToApiVersion("1.0")]
+        //[MapToApiVersion("2.0")]
         [HttpGet]
         public async Task<IActionResult> Get()
         {
