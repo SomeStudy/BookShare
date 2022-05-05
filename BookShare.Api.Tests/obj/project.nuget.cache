@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1aBYLnvZyq7xFz0O6spb5MBv5/21b10uGwOVQaRcMrSBBoF/+hXNMxqhrF3tD4LfQeNXubqXRS/Ao7EryTjoDw==",
+  "dgSpecHash": "4zf5qAFd5xqYWec2RzxZ2DLEA+ldp22UvRgdF1jlt4X1MZNgoUD5erptUbEspOeqhi9TzEqK7GdNg9ETIwa87w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ferid\\source\\repos\\BookShare\\BookShare.Api.Tests\\BookShare.Api.Tests.csproj",
+  "projectFilePath": "C:\\Users\\ferid\\source\\repos\\SomeStudy\\BookShare\\BookShare.Api.Tests\\BookShare.Api.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ferid\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
     "C:\\Users\\ferid\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",

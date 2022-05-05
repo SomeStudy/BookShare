@@ -6458,11 +6458,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ferid\\source\\repos\\BookShare\\BookShare.Api.Tests\\BookShare.Api.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\ferid\\Source\\Repos\\SomeStudy\\BookShare\\BookShare.Api.Tests\\BookShare.Api.Tests.csproj",
       "projectName": "BookShare.Api.Tests",
-      "projectPath": "C:\\Users\\ferid\\source\\repos\\BookShare\\BookShare.Api.Tests\\BookShare.Api.Tests.csproj",
+      "projectPath": "C:\\Users\\ferid\\Source\\Repos\\SomeStudy\\BookShare\\BookShare.Api.Tests\\BookShare.Api.Tests.csproj",
       "packagesPath": "C:\\Users\\ferid\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ferid\\source\\repos\\BookShare\\BookShare.Api.Tests\\obj\\",
+      "outputPath": "C:\\Users\\ferid\\Source\\Repos\\SomeStudy\\BookShare\\BookShare.Api.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ferid\\AppData\\Roaming\\NuGet\\NuGet.Config",

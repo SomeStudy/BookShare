@@ -898,11 +898,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ferid\\source\\repos\\BookShare\\BookShare.Api\\BookShare.Api.csproj",
+      "projectUniqueName": "C:\\Users\\ferid\\source\\repos\\SomeStudy\\BookShare\\BookShare.Api\\BookShare.Api.csproj",
       "projectName": "BookShare.Api",
-      "projectPath": "C:\\Users\\ferid\\source\\repos\\BookShare\\BookShare.Api\\BookShare.Api.csproj",
+      "projectPath": "C:\\Users\\ferid\\source\\repos\\SomeStudy\\BookShare\\BookShare.Api\\BookShare.Api.csproj",
       "packagesPath": "C:\\Users\\ferid\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ferid\\source\\repos\\BookShare\\BookShare.Api\\obj\\",
+      "outputPath": "C:\\Users\\ferid\\source\\repos\\SomeStudy\\BookShare\\BookShare.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ferid\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lt1xrL7GntzeJBQ3PfVEk6CjhPveUzzUxOXAhM1weTQ91p2k1bbODbsz4CaozQas/hJWgKAaQs2ObBXCS8oh7w==",
+  "dgSpecHash": "dMLH35+EslcZJ8+E9zSB/sIgOHWosuJkYddAsqYtnB1uhqjsOpIG2jLgN6O6+zYdLrFb2Gf2MEOylnLNMHKMiQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ferid\\source\\repos\\BookShare\\BookShare.Api\\BookShare.Api.csproj",
+  "projectFilePath": "C:\\Users\\ferid\\source\\repos\\SomeStudy\\BookShare\\BookShare.Api\\BookShare.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ferid\\.nuget\\packages\\dnsclient\\1.6.0\\dnsclient.1.6.0.nupkg.sha512",
     "C:\\Users\\ferid\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
