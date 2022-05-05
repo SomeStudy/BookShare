@@ -8,6 +8,4 @@
 [![CI](https://github.com/SomeStudy/BookShare/actions/workflows/CI.yml/badge.svg?branch=main)](https://github.com/SomeStudy/BookShare/actions/workflows/CI.yml)
 
 
-
-
-    [![CodeQL](https://github.com/SomeStudy/BookShare/actions/workflows/codeql.yml/badge.svg?branch=main)](https://github.com/SomeStudy/BookShare/actions/workflows/codeql.yml)
+[![CodeQL](https://github.com/SomeStudy/BookShare/actions/workflows/codeql.yml/badge.svg?branch=main)](https://github.com/SomeStudy/BookShare/actions/workflows/codeql.yml)
