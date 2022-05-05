@@ -11,6 +11,7 @@ jobs:
   analyze:
 
     name: analyze
+    permissions: read-all|write-all
     runs-on: ubuntu-latest
 
     strategy:
